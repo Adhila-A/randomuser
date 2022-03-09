@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <th>
+            <th>ID</th>
+            <th>NAME</th>
+            <th>EMAIL</th>
+            <th>PHONENUMBER</th>
+            <th>PROFESSION</th>
+            <th>SALARY</th>
+            <th>DATE OFJOINING</th>
+            <th>YEAR OF EXPERIENCE</th>
+>
+
+        </th>
+        <tr>
+            {%for data in data%}
+            <td>
+                <td>{{data.ID}}</td>
+                <td>{{data.NAME}}</td>
+                <td>{{data.EMAIL}}</td>
+                <td>{{data.PHONENUMBER}}</td>
+                <td>{{data.PROFESSION}}</td>
+                <td>{{data.SALARY}}</td>
+                <td>{{data.DATE_OF_JOINING}}</td>
+                <td>{{data.YEAR_OF_EXPERIENCE}}</td>
+    
+            </td>
+            {%endfor%}
+        </tr>
+    </table>
+    
+</body>
+</html>
